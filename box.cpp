@@ -1,5 +1,5 @@
 #include<iostream>
-#include<box.h>
+#include"box.h"
 
 box::box()
 {length=0;
@@ -13,12 +13,12 @@ box::box(int l,int w,int h)
   height=h;
 }
 
-box::void setbox()
+void box::setbox()
 {
   area =length*width*height;
 }
 
-box::int getbox()
+int box::getbox()
 {
   return area;
 }
